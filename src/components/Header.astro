@@ -1,13 +1,13 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import ModalButton from "./modal-button";
 ---
 
-<header>
-  <h2>
-    {SITE_TITLE}
-  </h2>
-  <nav class="text-2xl">
+<header class="fixed z-10 top-0">
+  <nav
+    class="flex flex-row h-16 w-screen text-2xl bg-neutral-700 justify-around items-center"
+  >
     <h1>Chie Andersen</h1>
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
@@ -15,5 +15,6 @@ import { SITE_TITLE } from "../consts";
     <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">
       Twitter
     </HeaderLink>
+    <ModalButton client:load>Fancy Text</ModalButton>
   </nav>
 </header>
