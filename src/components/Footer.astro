@@ -1,13 +1,12 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
+
 const today = new Date();
 ---
 
-<footer class="bg-neutral-700 text-neutral-50 h-auto bottom-0">
-  &copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<footer
+  class="absolute w-full bg-neutral-700 text-neutral-200 h-auto bottom-0 flex flex-col items-center py-4"
+>
+  &copy; {today.getFullYear()} Chie Andersen. All rights reserved.
+  <HeaderLink class="text-jade-300" href="/about">\ more about me /</HeaderLink>
 </footer>
-<style>
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-</style>

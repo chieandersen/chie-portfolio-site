@@ -1,20 +1,35 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
 import ModalButton from "./modal-button";
 ---
 
 <header class="fixed z-10 top-0">
   <nav
-    class="flex flex-row h-16 w-screen text-2xl bg-neutral-700 justify-around items-center"
+    class="flex justify-center h-16 w-screen text-lg md:text-xl text-jade-300 bg-neutral-700"
   >
-    <h1>Chie Andersen</h1>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">
+    <div
+      class="flex flex-row items-center justify-between w-screen max-w-5xl min-w-[265px] px-4"
+    >
+      <HeaderLink
+        class="hidden md:block font-caveat text-jade-200 text-3xl md:text-5xl"
+        href="/"
+      >
+        Chie Andersen
+      </HeaderLink>
+      <HeaderLink
+        class="md:hidden font-caveat text-jade-200 text-4xl md:text-5xl"
+        href="/"
+      >
+        Chie
+      </HeaderLink>
+      <div class="justify-end">
+        <HeaderLink class="mr-2 md:mr-4" href="/2dArt">2D</HeaderLink>
+        <HeaderLink class="mr-2 md:mr-4" href="/3dArt">3D</HeaderLink>
+        <HeaderLink href="/Projects">Projects</HeaderLink>
+      </div>
+      <!-- <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">
       Twitter
-    </HeaderLink>
-    <ModalButton client:load>Fancy Text</ModalButton>
+    </HeaderLink> -->
+    </div>
   </nav>
 </header>

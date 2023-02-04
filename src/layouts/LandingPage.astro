@@ -1,0 +1,37 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import ModalButton from "../components/modal-button";
+import { Image } from "@astrojs/image/components";
+import banner from "../images/chie-banner.jpg";
+import mobileBanner from "../images/portrait-chie.jpg";
+import HeaderLink from "../components/HeaderLink.astro";
+---
+
+<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+<body class="bg-jade-400 relative">
+  <main class="h-screen">
+    <div class="flex flex-col">
+      <!-- <HeaderLink class="mr-4" href="/">Home</HeaderLink> -->
+      <HeaderLink class="mr-4" href="/2dArt">2D Art</HeaderLink>
+      <HeaderLink href="/3dArt">3D</HeaderLink>
+      <HeaderLink href="/Projects">Projects</HeaderLink>
+    </div>
+
+    <Footer />
+  </main>
+  <div class="fixed top-0 bottom-0 -z-20 w-full h-full overflow-hidden">
+    <Image
+      class="absolute -z-10 h-auto -top-16 min-w-full min-h-full object-cover hidden md:block"
+      src={banner}
+      alt="Illustrated stylized self-portrait"
+    />
+    <Image
+      class="absolute -z-10 h-auto min-w-full min-h-full object-cover object-right md:hidden"
+      src={mobileBanner}
+      alt="Illustrated stylized self-portrait"
+    />
+  </div>
+</body>

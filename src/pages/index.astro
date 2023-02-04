@@ -1,36 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import ModalButton from "../components/modal-button";
-import { Image } from "@astrojs/image/components";
-import banner from "../images/chie-banner.jpg";
+import LandingPage from "../layouts/LandingPage.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <LandingPage />
   </head>
-  <body class="bg-jade-400">
-    <Header title={SITE_TITLE} />
-    <main>
-      <section class="justify-center items-center">
-        <div class="absolute w-full h-full overflow-hidden">
-          <Image
-            class="absolute -z-10 h-auto left-1/2 top-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2"
-            src={banner}
-            alt="Illustrated stylized self-portrait"
-          />
-        </div>
-        <div class="pt-32 flex flex-col text-neutral-50 mr-5">
-          <h1 class="text-7xl w-fit self-end">2D & 3D</h1>
-          <h1 class="text-7xl w-fit self-end">Artist</h1>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
-  </body>
 </html>
