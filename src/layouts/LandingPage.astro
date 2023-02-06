@@ -3,21 +3,56 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import ModalButton from "../components/modal-button";
 import { Image } from "@astrojs/image/components";
 import banner from "../images/chie-banner.jpg";
 import mobileBanner from "../images/portrait-chie.jpg";
+import taiyaki from "../images/emoji-taiyaki.png";
 import HeaderLink from "../components/HeaderLink.astro";
 ---
 
 <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-<body class="bg-jade-400 relative">
-  <main class="h-screen">
-    <div class="flex flex-col">
-      <!-- <HeaderLink class="mr-4" href="/">Home</HeaderLink> -->
-      <HeaderLink class="mr-4" href="/2dArt">2D Art</HeaderLink>
-      <HeaderLink href="/3dArt">3D</HeaderLink>
-      <HeaderLink href="/Projects">Projects</HeaderLink>
+<body class="relative">
+  <main class="h-screen flex justify-center md:justify-end">
+    <div
+      class="flex flex-col md:w-2/5 justify-center gap-12 text-6xl lg:text-8xl font-caveat text-jade-200"
+    >
+      <div class="flex gap-2 items-center">
+        <Image
+          class="w-16 h-16 opacity-90"
+          src={taiyaki}
+          alt="Illustrated stylized self-portrait"
+        />
+        <HeaderLink class="mr-4 hover:text-jade-50" href="/art">Art</HeaderLink>
+      </div>
+      <div class="flex gap-2 items-center">
+        <Image
+          class="w-16 h-16 opacity-90"
+          src={taiyaki}
+          alt="Illustrated stylized self-portrait"
+        />
+        <HeaderLink class="hover:text-jade-50 mr-4" href="/code">
+          Code
+        </HeaderLink>
+      </div>
+      <div class="flex gap-2 items-center">
+        <Image
+          class="w-16 h-16 opacity-90"
+          src={taiyaki}
+          alt="Illustrated stylized self-portrait"
+        />
+        <HeaderLink class="hover:text-jade-50 mr-4" href="/video">
+          Video
+        </HeaderLink>
+      </div>
+      <div class="flex gap-2 items-center">
+        <Image
+          class="w-16 h-16 opacity-90"
+          src={taiyaki}
+          alt="Illustrated stylized self-portrait"
+        />
+        <HeaderLink class="hover:text-jade-50" href="/about">About</HeaderLink>
+      </div>
+      <div class="h-12"></div>
     </div>
 
     <Footer />
@@ -28,8 +63,12 @@ import HeaderLink from "../components/HeaderLink.astro";
       src={banner}
       alt="Illustrated stylized self-portrait"
     />
+    <div
+      class="md:hidden absolute top-0 right-0 left-0 bottom-0 bg-neutral-700 opacity-70"
+    >
+    </div>
     <Image
-      class="absolute -z-10 h-auto min-w-full min-h-full object-cover object-right md:hidden"
+      class="absolute -z-10 h-auto min-w-full min-h-full object-cover object-right md:hidden mix-blend-luminosity blur-sm"
       src={mobileBanner}
       alt="Illustrated stylized self-portrait"
     />

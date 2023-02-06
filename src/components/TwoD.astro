@@ -1,0 +1,48 @@
+---
+import { Image } from "@astrojs/image/components";
+import chameleon from "../images/badges/badge-chameleon.png";
+import mobileBanner from "../images/portrait-chie.jpg";
+import Modal from "./Modal";
+import ModalButton from "./ModalButton";
+---
+
+<main class="flex flex-col items-center">
+  <div class="m-4 max-w-5xl">
+    <ModalButton
+      className="w-32"
+      src={"/@astroimage/images/badges/badge-chameleon.png"}
+      alt={"cute badge"}
+      client:load
+    />
+    <Modal />
+    <ModalButton
+      className="w-32"
+      src={"/@astroimage/images/badges/badge-einstein.png"}
+      alt={"cute badge"}
+      client:load
+    />
+    <Modal />
+    <ModalButton
+      className="w-32"
+      src={"src/images/badges/badge-home.png"}
+      alt={"cute badge"}
+      client:load
+    />
+    <Modal />
+    <ModalButton
+      className="w-32"
+      src={"src/images/badges/badge-world-traveler.png"}
+      alt={"cute badge"}
+      client:load
+    />
+    <Modal />
+    <ModalButton
+      className="w-32"
+      src={"src/images/badges/badge-monster-hunter.png"}
+      alt={"cute badge"}
+      client:load
+    />
+    <Modal />
+    <div></div>
+  </div>
+</main>
