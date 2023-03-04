@@ -4,9 +4,25 @@ import HeaderLink from "./HeaderLink.astro";
 const today = new Date();
 ---
 
+<!-- larger screens -->
 <footer
-  class="absolute w-full bg-neutral-700 text-neutral-200 h-auto bottom-0 flex flex-col items-center py-4"
+  class="hidden md:flex w-full bg-neutral-800 text-neutral-200 h-auto bottom-0 flex-col items-center py-4"
 >
-  &copy; {today.getFullYear()} Chie Andersen. All rights reserved.
+  <h3 class="font-muili font-medium w-fit self-center">
+    &copy; {today.getFullYear()} Chie Andersen. All rights reserved.
+  </h3>
   <HeaderLink class="text-jade-300" href="/about">\ more about me /</HeaderLink>
+</footer>
+
+<!-- mobile -->
+<footer
+  class="md:hidden w-full bg-neutral-800 text-neutral-200 h-auto bottom-0 flex flex-col items-center py-4"
+>
+  <h3 class="font-muili font-medium">
+    &copy; {today.getFullYear()} Chie Andersen
+  </h3>
+  <h3 class="font-muili font-medium">All rights reserved</h3>
+  <HeaderLink class="font-muili font-medium text-jade-300" href="/about">
+    \ more about me /
+  </HeaderLink>
 </footer>

@@ -4,45 +4,364 @@ import chameleon from "../images/badges/badge-chameleon.png";
 import mobileBanner from "../images/portrait-chie.jpg";
 import Modal from "./Modal";
 import ModalButton from "./ModalButton";
+import BannerCarousel from "./BannerCarousel";
+import Footer from "./Footer.astro";
 ---
 
-<main class="flex flex-col items-center">
-  <div class="m-4 max-w-5xl">
-    <ModalButton
-      className="w-32"
-      src={"/@astroimage/images/badges/badge-chameleon.png"}
-      alt={"cute badge"}
-      client:load
-    />
-    <Modal />
-    <ModalButton
-      className="w-32"
-      src={"/@astroimage/images/badges/badge-einstein.png"}
-      alt={"cute badge"}
-      client:load
-    />
-    <Modal />
-    <ModalButton
-      className="w-32"
-      src={"src/images/badges/badge-home.png"}
-      alt={"cute badge"}
-      client:load
-    />
-    <Modal />
-    <ModalButton
-      className="w-32"
-      src={"src/images/badges/badge-world-traveler.png"}
-      alt={"cute badge"}
-      client:load
-    />
-    <Modal />
-    <ModalButton
-      className="w-32"
-      src={"src/images/badges/badge-monster-hunter.png"}
-      alt={"cute badge"}
-      client:load
-    />
-    <Modal />
-    <div></div>
+<main class="text-jade-50 w-screen flex flex-col items-center">
+  <!-- Description -->
+  <div class="w-screen max-w-5xl min-w-[265px]">
+    <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+      <h1 class="text-6xl pb-8 self-center">2D Art</h1>
+      <ul class="list-disc list-inside text-xl max-w-lg self-center">
+        <li>conceptualize words, feelings, & abstract thoughts</li>
+        <li>story-driven images</li>
+        <li>light-hearted, rounded, and fun</li>
+      </ul>
+    </span>
   </div>
+  <!-- Banners -->
+  <div class="flex flex-col w-screen min-w-[265px] px-4 bg-neutral-800">
+    <span class="flex flex-col p-4 py-24 self-center max-w-5xl">
+      <h2 class="w-max self-center pb-8 text-6xl text-jade-50">Hero Images</h2>
+      <p class="max-w-lg self-center">
+        Banners, posters, and header images. These vibrant images set the mood.
+        I make sure the world within the illustration reaches beyond its
+        borders.
+      </p>
+    </span>
+    <div class="flex flex-col gap-2 lg:mx-auto lg:w-2/3">
+      <div class="w-full mb-8">
+        <BannerCarousel client:load />
+      </div>
+    </div>
+    <span class="flex md:flex-row gap-4 mb-16 mx-auto lg:w-2/3 self-center">
+      <ModalButton
+        className="max-w-32"
+        src={"src/images/banners/big-swimming-sharks.jpg"}
+        alt={"logistics of learning a language – focused on accountability and momentum moving forward"}
+        client:load
+      />
+      <ModalButton
+        className="max-w-32"
+        src={"src/images/banners/big-using-ns.jpg"}
+        alt={"Sea kelp forest with sunken sailing equipment"}
+        client:load
+      />
+    </span>
+  </div>
+  <!-- People and Characters -->
+  <div class="w-screen max-w-5xl min-w-[265px]">
+    <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+      <h1 class="text-6xl">People &</h1>
+      <h1 class="text-6xl pb-8">Characters</h1>
+      <p class="max-w-lg self-center">
+        Who wants profile pictures as real photos of themselves when you can
+        have sweet, illustrated versions 👀
+      </p>
+    </span>
+    <span
+      class="flex flex-col p-4 md:p-20 items-center max-w-5xl bg-neutral-50"
+    >
+      <div class="grid grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/people/overlay-chan.jpg"}
+          alt={"logistics of learning a language – focused on accountability and momentum moving forward"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/people/portrait-ty.jpg"}
+          alt={"Sea kelp forest with sunken sailing equipment"}
+          client:load
+        />
+      </div>
+      <div class="flex flex-row gap-4">
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/people/portrait-dalyn.jpg"}
+          alt={"Sea kelp forest with sunken sailing equipment"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/people/portrait-satoko.jpg"}
+          alt={"logistics of learning a language – focused on accountability and momentum moving forward"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- BADGES -->
+  <span class="pb-12 md:pb-20">
+    <div class="flex flex-col p-4 py-24 items-center max-w-5xl">
+      <h1 class="text-6xl text-jade-50 w-fit self-center">Badges</h1>
+      <p class="w-fit max-w-lg self-center">
+        Adding a bit of color to celebrate making progress on learning Japanese
+        at NativShark.
+      </p>
+    </div>
+    <div
+      class="col-span-3 mx-4 md:col-span-2 md:mx-4 max-w-5xl flex flex-col gap-2"
+    >
+      <div class="flex flex-row gap-2">
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-einstein.png"}
+          alt={"einstein badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-home.png"}
+          alt={"home badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-commander.png"}
+          alt={"einstein badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-world-traveler.png"}
+          alt={"world-traveler badge"}
+          client:load
+        />
+      </div>
+      <div class="flex flex-row gap-2">
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-monster-hunter.png"}
+          alt={"monster-hunter badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-chameleon.png"}
+          alt={"chameleon badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-sumo-wrestler.png"}
+          alt={"chameleon badge"}
+          client:load
+        />
+
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-detective-badge.png"}
+          alt={"chameleon badge"}
+          client:load
+        />
+      </div>
+      <div class="flex flex-row gap-2">
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-japanese.png"}
+          alt={"monster-hunter badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-sentence-cleaner.png"}
+          alt={"home badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"src/images/badges/badge-confident-traveler.png"}
+          alt={"home badge"}
+          client:load
+        />
+        <ModalButton
+          className=""
+          src={"/@astroimage/images/badges/badge-survival-phrases.png"}
+          alt={"chameleon badge"}
+          client:load
+        />
+      </div>
+    </div>
+  </span>
+  <!-- EMOJI -->
+  <span
+    class="bg-neutral-800 flex flex-col justify-center items-center pb-12 lg:my-24 md:pb-20"
+  >
+    <div class="flex flex-col p-4 py-24 items-center max-w-5xl">
+      <h1 class="text-6xl text-jade-50 w-fit">Emoji</h1>
+      <p class="max-w-lg">
+        There's never enough emojis to express all the emotions and occasions
+        with.
+      </p>
+    </div>
+    <div
+      class="max-w-5xl flex flex-col items-center justify-center gap-2 w-fit"
+    >
+      <div
+        class="gap-2 flex flex-wrap max-h-[560px] overflow-hidden justify-center items-center self-center mx-4"
+      >
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_chie_curious.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_chie_happy.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_chie_cry.png"}
+            alt={"home badge"}
+            client:load
+          />
+        </div>
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/boarder_bronze.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/boarder_silver.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_kimono.png"}
+            alt={"home badge"}
+            client:load
+          />
+        </div>
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_kakigoori.png"}
+            alt={"chameleon badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"/src/images/emoji/emoji_drink.png"}
+            alt={"einstein badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_pikachu.png"}
+            alt={"home badge"}
+            client:load
+          />
+        </div>
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_covereyes.png"}
+            alt={"world-traveler badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_sunglasses.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_cracker.png"}
+            alt={"monster-hunter badge"}
+            client:load
+          />
+        </div>
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"w-32 h-32 object-contain "}
+            src={"src/images/emoji/emoji_boba.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_smile.png"}
+            alt={"chameleon badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_instructor.png"}
+            alt={"chameleon badge"}
+            client:load
+          />
+        </div>
+
+        <div class="flex flex-row gap-2">
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_thistbh.png"}
+            alt={"home badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_valentine.png"}
+            alt={"world-traveler badge"}
+            client:load
+          />
+          <ModalButton
+            container={" w-32 h-32 flex justify-center items-center"}
+            modalImage={"w-96"}
+            className={"max-w-32 max-h-32 object-contain "}
+            src={"src/images/emoji/emoji_flex.png"}
+            alt={"home badge"}
+            client:load
+          />
+        </div>
+      </div>
+    </div>
+  </span>
+  <Footer />
 </main>

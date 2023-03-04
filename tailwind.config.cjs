@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        caveat: ["'Caveat'", "sans-serif"],
+        frankrl: ["'Frank Ruhl Libre'", "sans-serif"],
         notosansJP: ["'Noto Sans JP'", "sans-serif"],
+        muili: ["'Mulish'", "sans-serif"],
       },
       colors: {
         neutral: {

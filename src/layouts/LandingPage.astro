@@ -12,59 +12,77 @@ import HeaderLink from "../components/HeaderLink.astro";
 
 <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <body class="relative">
-  <main class="h-screen flex justify-center md:justify-end">
+  <main
+    class="h-screen flex justify-center md:justify-end border-white p-8 overflow-hidden"
+  >
     <div
-      class="flex flex-col md:w-2/5 justify-center gap-12 text-6xl lg:text-8xl font-caveat text-jade-200"
+      class="flex flex-col md:w-2/5 justify-center font-frankrl font-extrabold"
     >
-      <div class="flex gap-2 items-center">
+      <h1 class="text-white text-5xl lg:text-7xl">Chie</h1>
+      <h1 class="text-white text-5xl lg:text-7xl">Andersen</h1>
+      <div class="flex mt-10 gap-4 items-center">
         <Image
-          class="w-16 h-16 opacity-90"
+          class="w-14 h-14 opacity-90"
           src={taiyaki}
           alt="Illustrated stylized self-portrait"
         />
-        <HeaderLink class="mr-4 hover:text-jade-50" href="/art">Art</HeaderLink>
+        <HeaderLink
+          class="mr-4 text-white hover:text-jade-200 text-4xl lg:text-5xl"
+          href="/art"
+        >
+          Art
+        </HeaderLink>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex gap-4 mt-4 items-center">
         <Image
-          class="w-16 h-16 opacity-90"
+          class="w-14 h-14 opacity-90"
           src={taiyaki}
           alt="Illustrated stylized self-portrait"
         />
-        <HeaderLink class="hover:text-jade-50 mr-4" href="/code">
+        <HeaderLink
+          class="text-white hover:text-jade-200 mr-4 text-4xl lg:text-5xl"
+          href="/code"
+        >
           Code
         </HeaderLink>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex gap-4 mt-4 items-center">
         <Image
-          class="w-16 h-16 opacity-90"
+          class="w-14 h-14 opacity-90"
           src={taiyaki}
           alt="Illustrated stylized self-portrait"
         />
-        <HeaderLink class="hover:text-jade-50 mr-4" href="/video">
+        <HeaderLink
+          class="text-white hover:text-jade-200 mr-4 text-4xl lg:text-5xl"
+          href="/video"
+        >
           Video
         </HeaderLink>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex gap-4 mt-4 items-center">
         <Image
-          class="w-16 h-16 opacity-90"
+          class="w-14 h-14 opacity-90"
           src={taiyaki}
           alt="Illustrated stylized self-portrait"
         />
-        <HeaderLink class="hover:text-jade-50" href="/about">About</HeaderLink>
+        <HeaderLink
+          class="text-white hover:text-jade-200 text-4xl lg:text-5xl"
+          href="/about"
+        >
+          About
+        </HeaderLink>
       </div>
-      <div class="h-12"></div>
+      <div class="h-24"></div>
     </div>
-
-    <Footer />
   </main>
   <div class="fixed top-0 bottom-0 -z-20 w-full h-full overflow-hidden">
     <Image
-      class="absolute -z-10 h-auto -top-16 min-w-full min-h-full object-cover hidden md:block"
+      class="absolute -z-10 h-auto origin-bottom scale-110 min-w-full min-h-full object-cover hidden md:block"
       src={banner}
       alt="Illustrated stylized self-portrait"
     />
     <div
-      class="md:hidden absolute top-0 right-0 left-0 bottom-0 bg-neutral-700 opacity-70"
+      class="md:hidden absolute top-0 right-0 left-0 bottom-0 bg-neutral-800 opacity-90"
     >
     </div>
     <Image

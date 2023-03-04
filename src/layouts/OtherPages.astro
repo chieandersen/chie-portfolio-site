@@ -11,14 +11,13 @@ import mobileBanner from "../images/portrait-chie.jpg";
 
 <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <body class="relative">
-  <main class="h-screen">
+  <main class="">
     <Header />
     <section class="relative justify-center items-center">
-      <div class="overflow-auto bg-jade-400">
-        <div class="bg-white h-16"></div>
+      <div class="overflow-auto bg-jade-600">
+        <div class="bg-white h-20"></div>
         <slot />
       </div>
-      <Footer />
     </section>
   </main>
 </body>
