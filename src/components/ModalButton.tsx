@@ -2,8 +2,8 @@ import { useState } from "react";
 import Modal from "./Modal";
 
 type ModalButtonProps = {
-  container: string;
-  modalImage: string;
+  container?: string;
+  modalImage?: string;
   src: string;
   alt: string;
   className?: string;

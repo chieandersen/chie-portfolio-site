@@ -1,0 +1,236 @@
+---
+import ModalButton from "./ModalButton";
+import BannerCarousel from "./BannerCarousel";
+import Footer from "./Footer.astro";
+---
+
+<main class="text-jade-50 w-screen flex flex-col items-center">
+  <!-- Description -->
+  <div class="w-screen max-w-5xl min-w-[265px]">
+    <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+      <h1 class="text-6xl pb-8 self-center">3D Art</h1>
+      <ul class="list-disc list-inside text-xl max-w-lg self-center">
+        <li>Realistic texturing and materials</li>
+        <li>Focus on hard surface modelling</li>
+        <li>
+          Softwares: blender, unreal engine, substance painter, unreal,
+          photoshop, illustrator
+        </li>
+      </ul>
+    </span>
+  </div>
+  <!-- Sewing Machine -->
+  <div class="w-screen max-w-5xl min-w-[265px] bg-neutral-800">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Sewing Machine</h1>
+      <p class="max-w-lg self-center">
+        A halloween challenge turned into a full project ^^
+      </p>
+    </span>
+    <span
+      class="flex flex-col p-4 md:p-20 items-center max-w-5xl bg-neutral-800"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/sewing_1.png"}
+          alt={"Front view"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/sewing_4.png"}
+          alt={"Close up of intricate design textured with alphas made in illustrator and textured in substance painter"}
+          client:load
+        />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/sewing_3.png"}
+          alt={"Bottom plate shot showing wear and tear from use and age"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/sewing_2.png"}
+          alt={"Back view"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- Mecha -->
+  <div class="w-screen max-w-5xl min-w-[265px] bg-neutral-800">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Sci-Fi Mecha</h1>
+      <p class="max-w-lg self-center">
+        An aspiration turned into milestone project.
+      </p>
+      <a class="underline" href="https://www.artstation.com/artwork/oVx6L">
+        reference art by Heng Z</a
+      >
+    </span>
+    <span
+      class="flex flex-col p-4 md:p-20 items-center max-w-5xl bg-neutral-800"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/mech_render_1.jpg"}
+          alt={"main side view of mecha"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/mech_render_3.jpg"}
+          alt={"closer-up on legs"}
+          client:load
+        />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/mech_render_2.jpg"}
+          alt={"zooming in on the head"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/mech_render_4.jpg"}
+          alt={"Back view"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- Detective -->
+  <div class="w-screen max-w-5xl min-w-[265px] bg-neutral-800">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Detective's Desk</h1>
+      <p class="max-w-lg self-center">Small scene rendered in Unreal Engine</p>
+    </span>
+    <span
+      class="flex flex-col p-4 md:p-20 items-center max-w-5xl bg-neutral-800"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/detective_1.jpg"}
+          alt={"detective's desk close up showing revolver, hoister, empty coffee cans, hand-held radio, and some papers"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/detective_2.jpg"}
+          alt={"Hand-held radio normal map, occulusion map, and wireframe"}
+          client:load
+        />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/detective_3.jpg"}
+          alt={"Hand-held radio front and back"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 flex-1"
+          src={"src/images/threed/detective_5.jpg"}
+          alt={"Revolver renders"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- Tracer -->
+  <div class="w-screen max-w-5xl min-w-[265px]">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Tracer's Gun --</h1>
+      <h1 class="text-6xl">Lunar Year Skin</h1>
+      <p class="max-w-lg self-center">
+        Youtube Tutorial turned into my own texturing project
+      </p>
+    </span>
+    <span class="flex p-4 md:p-20 items-center max-w-5xl">
+      <div class="flex flex-col md:flex-row gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/tracerGun_final_1.jpg"}
+          alt={"Hand-painted textures in substance painter"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/tracerGun_final_3.jpg"}
+          alt={"wireframe view"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/tracerGun_final_2.jpg"}
+          alt={"occlusion view"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- Monster -->
+  <div class="w-screen max-w-5xl min-w-[265px] bg-jade-600">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Pumpkin Monster</h1>
+      <p class="max-w-lg self-center">
+        Monster made for a halloween walk-around game made in unreal engine
+      </p>
+      <p class="max-w-lg self-center">
+        This one is fully rigged and did an idle animation in this demo game
+      </p>
+    </span>
+    <span class="flex p-4 md:p-20 items-center max-w-5xl">
+      <div class="flex flex-col md:flex-row gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/monster_sketch.png"}
+          alt={"Initial sketch of the pumpkin monster"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/monster_2.png"}
+          alt={"modeled, sculpted in blender, textured in substance painter"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <!-- Personal -->
+  <div class="w-screen max-w-5xl min-w-[265px] bg-neutral-800 md:mb-24">
+    <span class="flex flex-col p-4 pt-24 items-center max-w-5xl">
+      <h1 class="text-6xl">Personal Projects</h1>
+      <p class="max-w-lg self-center">Projects just for fun ^^</p>
+    </span>
+    <span class="flex p-4 md:p-20 items-center max-w-5xl">
+      <div class="flex flex-col md:flex-row gap-4 pb-3">
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/p_candle_holder.png"}
+          alt={"that classic still-life-look of a candle holder"}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/p_high_chair.png"}
+          alt={"high chair "}
+          client:load
+        />
+        <ModalButton
+          className="max-w-32 col-span-1"
+          src={"src/images/threed/oni_omen_3.png"}
+          alt={"oni mask"}
+          client:load
+        />
+      </div>
+    </span>
+  </div>
+  <Footer />
+</main>

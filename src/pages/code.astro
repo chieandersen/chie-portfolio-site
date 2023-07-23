@@ -1,5 +1,56 @@
 ---
 import OtherPages from "../layouts/OtherPages.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<OtherPages />
+<OtherPages>
+  <main
+    class="flex flex-col justify-center text-jade-50 w-screen flex flex-col items-center"
+  >
+    <div class="w-screen max-w-5xl min-w-[265px]">
+      <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+        <h1 class="text-6xl pb-8 self-center">Coding</h1>
+        <ul class="list-disc list-inside text-xl max-w-lg self-center">
+          <li>Typescript & Typescript</li>
+          <li>React</li>
+          <li>Remix</li>
+        </ul>
+      </span>
+    </div>
+    <div
+      class="flex flex-col w-screen max-w-5xl md:min-w-[265px] bg-neutral-800"
+    >
+      <span class="flex flex-col p-4 py-24 self-center max-w-5xl">
+        <h2 class="self-center pb-8 text-6xl text-jade-50">
+          Laid-Back Japanese Podcast
+        </h2>
+        <p class="max-w-lg self-center">
+          A podcast where you can go to listen to relaxed conversations in
+          English about Japanese language and culture packed with valuable,
+          usable information. But free of tedious drills, vocab lists, and
+          grammar sections. The landing site is made with Astro and some React
+          components.
+        </p>
+      </span>
+      <div class="flex flex-col gap-2 lg:mx-auto lg:w-4/5">
+        <img
+          class="hidden md:block"
+          src="src/images/lbjp_screen.png"
+          alt="Laid-back Japanese Podcast landing page image"
+        />
+        <img
+          class="md:hidden px-4"
+          src="src/images/lbjp_mobile.png"
+          alt="Laid-back Japanese Podcast landing page image for phones"
+        />
+      </div>
+      <div class="h-24"></div>
+    </div>
+  </main>
+  <div class="h-24"></div>
+  <!-- // lbjp website
+// currently working on nativshark! -->
+
+  <!-- support site -->
+  <Footer />
+</OtherPages>

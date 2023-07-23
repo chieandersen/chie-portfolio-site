@@ -28,42 +28,42 @@ const BannerCarousel = () => {
             <img
               className="p-1"
               src="src/images/banners/big-crepes.jpg"
-              alt="crepes"
+              alt="under-water crepe shop"
             />
           </Slide>
           <Slide index={2}>
             <img
               className="p-1"
               src="src/images/banners/big-shinkansen.jpg"
-              alt="ocean floor with colorful coral and a happy shark"
+              alt="girl staring out the shinkansen window looking at Mt.Fuji"
             />
           </Slide>
           <Slide index={3}>
             <img
               className="p-1"
               src="src/images/banners/dropped_phone.png"
-              alt="ocean floor with colorful coral and a happy shark"
+              alt="Did he really just drop our camera into the river?"
             />
           </Slide>
           <Slide index={4}>
             <img
               className="p-1"
               src="src/images/banners/lbjp2_banner_cover_02.jpg"
-              alt="ocean floor with colorful coral and a happy shark"
+              alt="Cozy study desk with notebooks, laptop, scrapbook, and a phone opeded to NativShark--Today's Study page"
             />
           </Slide>
           <Slide index={5}>
             <img
               className="p-1"
               src="src/images/banners/big-beach-light.png"
-              alt="ocean floor with colorful coral and a happy shark"
+              alt="page divider illustration of the ocean waves and a crab waving at you on the sandy beach"
             />
           </Slide>
           <Slide index={6}>
             <img
               className="p-1"
               src="src/images/banners/big-beach-dark.png"
-              alt="ocean floor with colorful coral and a happy shark"
+              alt="page divider illustration of the ocean waves in dark mode"
             />
           </Slide>
         </Slider>

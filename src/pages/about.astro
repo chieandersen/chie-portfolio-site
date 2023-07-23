@@ -1,0 +1,55 @@
+---
+import OtherPages from "../layouts/OtherPages.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<OtherPages>
+  <main
+    class="flex flex-col justify-center text-jade-50 w-screen flex flex-col items-center"
+  >
+    <div class="w-screen max-w-5xl min-w-[265px] my-8"></div>
+    <div
+      class="flex flex-col w-screen max-w-5xl md:min-w-[265px] bg-neutral-800"
+    >
+      <span class="flex flex-col p-4 py-24 self-center max-w-5xl">
+        <h2 class="self-center pb-8 text-6xl text-jade-50">About</h2>
+        <p class="max-w-lg">Hey, it's Chie^^</p>
+        <p class="max-w-lg">
+          I've ended up aquiring a lot of different skills over the years. I
+          enjoy conceptualizing abstract thoughts and making them come to life.
+        </p>
+        <p class="max-w-lg">
+          No matter the project I've taken on, I'm confident I will be able to
+          find a will be able to find a solution and bring it to life.
+        </p>
+        <p class="max-w-lg">
+          My current main project is rebuilding NativShark with Caleb.
+        </p>
+        <p class="max-w-lg">
+          Aside from coding the new platform, I make illustrations as the need
+          arrises, make podcast recordings and write show notes, take close-up
+          photos of plants on walks, make art when I find some inspiration.
+        </p>
+      </span>
+      <div class="flex flex-col gap-2 lg:mx-auto lg:w-4/5">
+        <img
+          class="hidden md:block"
+          src="src/images/kimono.png"
+          alt="ocean floor with colorful coral and a happy shark"
+        />
+        <img
+          class="md:hidden px-4"
+          src="src/images/lbjp_mobile.png"
+          alt="ocean floor with colorful coral and a happy shark"
+        />
+      </div>
+      <div class="h-24"></div>
+    </div>
+  </main>
+  <div class="h-24"></div>
+  <!-- // lbjp website
+// currently working on nativshark! -->
+
+  <!-- support site -->
+  <Footer />
+</OtherPages>

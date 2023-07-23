@@ -1,12 +1,9 @@
 ---
-import ThreeD from "../components/ThreeD.astro";
-import TwoD from "../components/TwoD.astro";
 import OtherPages from "./OtherPages.astro";
 ---
 
 <OtherPages>
   <div class="bg-jade-600 flex justify-center">
-    <TwoD />
-    <ThreeD />
+    <slot />
   </div>
 </OtherPages>

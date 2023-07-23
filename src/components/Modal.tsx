@@ -9,7 +9,7 @@ const Image = ({ src, alt }: ImageProps) => {
 
 type ModalProps = {
   modal: boolean;
-  modalImage: string;
+  modalImage?: string;
   setModal: (modal: boolean) => void;
   src: string;
   alt: string;
