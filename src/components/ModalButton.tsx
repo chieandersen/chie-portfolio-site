@@ -20,12 +20,11 @@ const ModalButton = ({
   const [modal, setModal] = useState(false);
   // when imported on other pages ex: <ModalButton>children here</ModalButton>
   return (
-    <div className="grid-flow-row">
+    <div className="grid-flow-row ">
       <button
         className=""
         onClick={() => {
           setModal(!modal);
-          console.log(modal);
         }}
       >
         <div className={container}>

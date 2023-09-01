@@ -21,17 +21,19 @@ const Modal = ({ modal, modalImage, setModal, src, alt }: ModalProps) => {
   return (
     <>
       <div
-        className="flex justify-center items-center fixed  right-0 left-0 top-0 bottom-0"
+        className="flex justify-center items-center fixed right-0 left-0 top-0 bottom-0"
         onClick={() => setModal(false)}
       >
         <div className="bg-neutral-50 opacity-90 absolute right-0 left-0 top-0 bottom-0 -z-10" />
-        <div className="flex flex-col max-w-[800px] items-center m-auto">
+        <div className="flex flex-col max-w-[800px] items-center justify-center m-auto">
           {/* <button onClick={() => setModal(false)}>Close</button> */}
           <div className="h-16" />
           <div className={modalImage}>
             <Image src={src} alt={alt} />
           </div>
-          <p className="mt-4 text-jade-50">{alt}</p>
+          <div className="mt-4 mx-auto text-jade-800 w-fit text-center font-semibold">
+            {alt}
+          </div>
         </div>
       </div>
     </>

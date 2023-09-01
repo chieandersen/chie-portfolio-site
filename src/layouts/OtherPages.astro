@@ -1,21 +1,16 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import ModalButton from "../components/ModalButton";
-import { Image } from "@astrojs/image/components";
-import banner from "../images/chie-banner.jpg";
-import mobileBanner from "../images/portrait-chie.jpg";
 ---
 
 <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 <body class="relative">
-  <main class="">
+  <main class="bg-jade-600">
     <Header />
     <section class="relative justify-center items-center">
       <div class="overflow-x-hidden bg-jade-600">
-        <div class="bg-white h-20"></div>
+        <div class="h-20"></div>
         <slot />
       </div>
     </section>
