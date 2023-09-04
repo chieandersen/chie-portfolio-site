@@ -1,6 +1,9 @@
 ---
 import OtherPages from "../layouts/OtherPages.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import lbjpScreen from "@assets/lbjp_screen.png"
+import lbjpMobile from "@assets/lbjp_screen.png"
 ---
 
 <OtherPages>
@@ -35,14 +38,14 @@ import Footer from "../components/Footer.astro";
         </p>
       </span>
       <div class="flex flex-col gap-2 lg:mx-auto lg:w-4/5">
-        <img
+        <Image
           class="hidden md:block"
-          src="src/images/lbjp_screen.png"
+          src={lbjpScreen}
           alt="Laid-back Japanese Podcast landing page image"
         />
-        <img
+        <Image
           class="md:hidden px-4"
-          src="src/images/lbjp_mobile.png"
+          src={lbjpMobile}
           alt="Laid-back Japanese Podcast landing page image"
         />
       </div>

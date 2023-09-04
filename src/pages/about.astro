@@ -1,6 +1,9 @@
 ---
 import OtherPages from "../layouts/OtherPages.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import threeKimono from "@assets/kimono.png";
+import lbjpMobile from "@assets/lbjp_mobile.png";
 ---
 
 <OtherPages>
@@ -33,14 +36,14 @@ import Footer from "../components/Footer.astro";
         </p>
       </span>
       <div class="flex flex-col gap-2 lg:mx-auto lg:w-4/5">
-        <img
+        <Image
           class="hidden md:block"
-          src="src/images/kimono.png"
+          src={threeKimono}
           alt="three different kimono illustrations"
         />
-        <img
+        <Image
           class="md:hidden px-4"
-          src="src/images/lbjp_mobile.png"
+          src={lbjpMobile}
           alt="image of laid-back-japanese podcast landing site"
         />
       </div>

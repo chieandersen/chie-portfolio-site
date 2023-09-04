@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 type ModalButtonProps = {
   container?: string;
   modalImage?: string;
-  src: string;
+  src: ImageMetadata;
   alt: string;
   className?: string;
 };
@@ -28,7 +30,7 @@ const ModalButton = ({
         }}
       >
         <div className={container}>
-          <img src={src} alt={alt} className={className} />
+          <Image src={src} alt={alt} class={className} />
         </div>
       </button>
       <Modal
@@ -37,7 +39,7 @@ const ModalButton = ({
         setModal={setModal}
         src={src}
         alt={alt}
-      ></Modal>
+      />
     </div>
   );
 };

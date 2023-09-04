@@ -1,7 +1,26 @@
 ---
 import ModalButton from "./ModalButton";
-import BannerCarousel from "./BannerCarousel";
 import Footer from "./Footer.astro";
+import sewingFrontView from "@assets/threed/sewing_1.png";
+import sewingDesignTexture from "@assets/threed/sewing_4.png";
+import sewingBottomPlate from "@assets/threed/sewing_3.png";
+import sewingBackView from "@assets/threed/sewing_2.png";
+import mechaMainSideView from "@assets/threed/mech_render_1.jpg";
+import mechaLegsCloseUp from "@assets/threed/mech_render_3.jpg";
+import mechaHead from "@assets/threed/mech_render_2.jpg";
+import mechaBackView from "@assets/threed/mech_render_4.jpg";
+import detectiveCloseUp from "@assets/threed/detective_1.jpg";
+import detectiveRadioMaps from "@assets/threed/detective_2.jpg";
+import detectiveRadio from "@assets/threed/detective_3.jpg";
+import detectiveRevolver from "@assets/threed/detective_5.jpg";
+import tracerGun from "@assets/threed/tracerGun_final_1.jpg";
+import tracerGunWire from "@assets/threed/tracerGun_final_3.jpg";
+import tracerGunOcc from "@assets/threed/tracerGun_final_2.jpg";
+import monsterSketch from "@assets/threed/monster_sketch.png";
+import monsterRender from "@assets/threed/monster_2.png";
+import candleHolder from "@assets/threed/p_candle_holder.png";
+import highChair from "@assets/threed/p_high_chair.png";
+import oniMask from "@assets/threed/oni_omen_3.png";
 ---
 
 <main class="text-jade-50 w-screen flex flex-col items-center">
@@ -33,13 +52,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/sewing_1.png"}
+          src={sewingFrontView}
           alt={"Front view"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/sewing_4.png"}
+          src={sewingDesignTexture}
           alt={"Close up of intricate design textured with alphas made in illustrator and textured in substance painter"}
           client:load
         />
@@ -47,13 +66,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/sewing_3.png"}
+          src={sewingBottomPlate}
           alt={"Bottom plate shot showing wear and tear from use and age"}
           client:load
         />
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/sewing_2.png"}
+          src={sewingBackView}
           alt={"Back view"}
           client:load
         />
@@ -77,13 +96,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/mech_render_1.jpg"}
+          src={mechaMainSideView}
           alt={"Main side view of mecha"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/mech_render_3.jpg"}
+          src={mechaLegsCloseUp}
           alt={"Closer-up on legs"}
           client:load
         />
@@ -91,13 +110,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/mech_render_2.jpg"}
+          src={mechaHead}
           alt={"Zooming in on the head"}
           client:load
         />
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/mech_render_4.jpg"}
+          src={mechaBackView}
           alt={"Back view"}
           client:load
         />
@@ -116,13 +135,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/detective_1.jpg"}
+          src={detectiveCloseUp}
           alt={"Detective's desk close up showing revolver, hoister, empty coffee cans, hand-held radio, and some papers"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/detective_2.jpg"}
+          src={detectiveRadioMaps}
           alt={"Hand-held radio normal map, occulusion map, and wireframe"}
           client:load
         />
@@ -130,13 +149,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/detective_3.jpg"}
+          src={detectiveRadio}
           alt={"Hand-held radio front and back"}
           client:load
         />
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/threed/detective_5.jpg"}
+          src={detectiveRevolver}
           alt={"Revolver renders"}
           client:load
         />
@@ -156,19 +175,19 @@ import Footer from "./Footer.astro";
       <div class="flex flex-col md:flex-row gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/tracerGun_final_1.jpg"}
+          src={tracerGun}
           alt={"Hand-painted textures in substance painter"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/tracerGun_final_3.jpg"}
+          src={tracerGunWire}
           alt={"Wireframe view"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/tracerGun_final_2.jpg"}
+          src={tracerGunOcc}
           alt={"Occlusion view"}
           client:load
         />
@@ -190,13 +209,13 @@ import Footer from "./Footer.astro";
       <div class="flex flex-col md:flex-row gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/monster_sketch.png"}
+          src={monsterSketch}
           alt={"Initial sketch of the pumpkin monster"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/monster_2.png"}
+          src={monsterRender}
           alt={"Modeled, sculpted in blender, textured in substance painter"}
           client:load
         />
@@ -213,19 +232,19 @@ import Footer from "./Footer.astro";
       <div class="flex flex-col md:flex-row gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/p_candle_holder.png"}
+          src={candleHolder}
           alt={"That classic still-life-look of a candle holder"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/p_high_chair.png"}
+          src={highChair}
           alt={"High chair"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/threed/oni_omen_3.png"}
+          src={oniMask}
           alt={"Oni mask"}
           client:load
         />

@@ -1,17 +1,11 @@
-type ImageProps = {
-  src: string;
-  alt: string;
-};
-
-const Image = ({ src, alt }: ImageProps) => {
-  return <img src={src} alt={alt} />;
-};
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 type ModalProps = {
   modal: boolean;
   modalImage?: string;
   setModal: (modal: boolean) => void;
-  src: string;
+  src: ImageMetadata;
   alt: string;
 };
 

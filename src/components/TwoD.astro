@@ -2,6 +2,42 @@
 import ModalButton from "./ModalButton";
 import BannerCarousel from "./BannerCarousel";
 import Footer from "./Footer.astro";
+import bigSharks from "@assets/banners/big-swimming-sharks.jpg";
+import bigNS from "@assets/banners/big-using-ns.jpg";
+import overlayChan from "@assets/people/overlay-chan.jpg";
+import dalyn from "@assets/people/portrait-dalyn.jpg";
+import satoko from "@assets/people/portrait-satoko.jpg";
+import ty from "@assets/people/portrait-ty.jpg";
+import einstein from "@assets/badges/badge-einstein.png";
+import home from "@assets/badges/badge-home.png";
+import commander from "@assets/badges/badge-commander.png";
+import worldTraveler from "@assets/badges/badge-world-traveler.png";
+import monsterHunter from "@assets/badges/badge-monster-hunter.png";
+import japanese from "@assets/badges/badge-japanese.png";
+import chameleon from "@assets/badges/badge-chameleon.png";
+import sumo from "@assets/badges/badge-sumo-wrestler.png";
+import detectiveBadge from "@assets/badges/badge-detective-badge.png";
+import sentenceCleaner from "@assets/badges/badge-sentence-cleaner.png";
+import confidentTraveler from "@assets/badges/badge-confident-traveler.png";
+import survivalPhrases from "@assets/badges/badge-survival-phrases.png";
+import curious from "@assets/emoji/emoji_chie_curious.png";
+import happy from "@assets/emoji/emoji_chie_happy.png";
+import cry from "@assets/emoji/emoji_chie_cry.png";
+import bronze from "@assets/emoji/boarder_bronze.png";
+import silver from "@assets/emoji/boarder_silver.png";
+import kimono from "@assets/emoji/emoji_kimono.png";
+import snowCone from "@assets/emoji/emoji_kakigoori.png";
+import drink from "@assets/emoji/emoji_drink.png";
+import pikachu from "@assets/emoji/emoji_pikachu.png";
+import covereyes from "@assets/emoji/emoji_covereyes.png";
+import sunglasses from "@assets/emoji/emoji_sunglasses.png";
+import cracker from "@assets/emoji/emoji_cracker.png";
+import boba from "@assets/emoji/emoji_boba.png";
+import smile from "@assets/emoji/emoji_smile.png";
+import instructor from "@assets/emoji/emoji_instructor.png";
+import thistbh from "@assets/emoji/emoji_thistbh.png";
+import valentine from "@assets/emoji/emoji_valentine.png";
+import flex from "@assets/emoji/emoji_flex.png";
 ---
 
 <main class="text-jade-50 w-screen flex flex-col items-center">
@@ -36,13 +72,13 @@ import Footer from "./Footer.astro";
     <span class="flex md:flex-row gap-4 mb-16 mx-auto lg:w-2/3 self-center">
       <ModalButton
         className="max-w-32"
-        src={"src/images/banners/big-swimming-sharks.jpg"}
+        src={bigSharks}
         alt={"Logistics of learning a language – focused on accountability and momentum moving forward"}
         client:load
       />
       <ModalButton
         className="max-w-32"
-        src={"src/images/banners/big-using-ns.jpg"}
+        src={bigNS}
         alt={"Sea kelp forest with sunken sailing equipment"}
         client:load
       />
@@ -64,13 +100,13 @@ import Footer from "./Footer.astro";
       <div class="grid grid-cols-2 gap-4 pb-3">
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/people/overlay-chan.jpg"}
+          src={overlayChan}
           alt={"Portrait illustation of sea-angel"}
           client:load
         />
         <ModalButton
           className="max-w-32 col-span-1"
-          src={"src/images/people/portrait-ty.jpg"}
+          src={ty}
           alt={"Portrait illustation of Ty"}
           client:load
         />
@@ -78,13 +114,13 @@ import Footer from "./Footer.astro";
       <div class="flex flex-row gap-4">
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/people/portrait-dalyn.jpg"}
+          src={dalyn}
           alt={"Portrait illustation of Dalyn"}
           client:load
         />
         <ModalButton
           className="max-w-32 flex-1"
-          src={"src/images/people/portrait-satoko.jpg"}
+          src={satoko}
           alt={"Portrait illustration of Satoko"}
           client:load
         />
@@ -108,25 +144,20 @@ import Footer from "./Footer.astro";
       <div class="flex flex-row gap-2">
         <ModalButton
           className=""
-          src={"src/images/badges/badge-einstein.png"}
+          src={einstein}
           alt={"Einstein badge"}
           client:load
         />
+        <ModalButton className="" src={home} alt={"Home badge"} client:load />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-home.png"}
-          alt={"Home badge"}
-          client:load
-        />
-        <ModalButton
-          className=""
-          src={"src/images/badges/badge-commander.png"}
+          src={commander}
           alt={"Commander badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-world-traveler.png"}
+          src={worldTraveler}
           alt={"World-traveler badge"}
           client:load
         />
@@ -134,26 +165,26 @@ import Footer from "./Footer.astro";
       <div class="flex flex-row gap-2">
         <ModalButton
           className=""
-          src={"src/images/badges/badge-monster-hunter.png"}
+          src={monsterHunter}
           alt={"Monster-hunter badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-chameleon.png"}
+          src={chameleon}
           alt={"Chameleon badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-sumo-wrestler.png"}
+          src={sumo}
           alt={"Sumo-wrestler badge"}
           client:load
         />
 
         <ModalButton
           className=""
-          src={"src/images/badges/badge-detective-badge.png"}
+          src={detectiveBadge}
           alt={"detective badge"}
           client:load
         />
@@ -161,25 +192,25 @@ import Footer from "./Footer.astro";
       <div class="flex flex-row gap-2">
         <ModalButton
           className=""
-          src={"src/images/badges/badge-japanese.png"}
+          src={japanese}
           alt={"Japaese investigation badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-sentence-cleaner.png"}
+          src={sentenceCleaner}
           alt={"Sentence-cleaner badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-confident-traveler.png"}
+          src={confidentTraveler}
           alt={"Confident-traveler badge"}
           client:load
         />
         <ModalButton
           className=""
-          src={"src/images/badges/badge-survival-phrases.png"}
+          src={survivalPhrases}
           alt={"Survival-phrases badge"}
           client:load
         />
@@ -205,10 +236,10 @@ import Footer from "./Footer.astro";
       >
         <div class="flex flex-row gap-2">
           <ModalButton
-            container={" w-32 h-32 flex justify-center items-center"}
+            container={" w-32 h-32 flex justify-center items-center"
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_chie_curious.png"}
+            src={curious}
             alt={"Curious Chie emoji"}
             client:load
           />
@@ -216,7 +247,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_chie_happy.png"}
+            src={happy}
             alt={"Happy Chie emoji"}
             client:load
           />
@@ -224,7 +255,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_chie_cry.png"}
+            src={cry}
             alt={"Crying Chie emoji"}
             client:load
           />
@@ -234,7 +265,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/boarder_bronze.png"}
+            src={bronze}
             alt={"Bronze profile picture border"}
             client:load
           />
@@ -242,7 +273,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/boarder_silver.png"}
+            src={silver}
             alt={"Silver profile picture border"}
             client:load
           />
@@ -250,7 +281,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_kimono.png"}
+            src={kimono}
             alt={"Kimono emoji"}
             client:load
           />
@@ -260,7 +291,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_kakigoori.png"}
+            src={snowCone}
             alt={"Snow-cone emoji"}
             client:load
           />
@@ -268,7 +299,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"/src/images/emoji/emoji_drink.png"}
+            src={drink}
             alt={"Tropical drink emoji"}
             client:load
           />
@@ -276,7 +307,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_pikachu.png"}
+            src={pikachu}
             alt={"Shark picachu emoji"}
             client:load
           />
@@ -286,7 +317,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_covereyes.png"}
+            src={covereyes}
             alt={"Puffer fish see-no-evil emoji"}
             client:load
           />
@@ -294,7 +325,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_sunglasses.png"}
+            src={sunglasses}
             alt={"Cool sunglass shark emoji"}
             client:load
           />
@@ -302,7 +333,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_cracker.png"}
+            src={cracker}
             alt={"Party cracker emoji"}
             client:load
           />
@@ -312,7 +343,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"w-32 h-32 object-contain "}
-            src={"src/images/emoji/emoji_boba.png"}
+            src={boba}
             alt={"Shark sharing boba tea emoji"}
             client:load
           />
@@ -320,7 +351,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_smile.png"}
+            src={smile}
             alt={"Shark smile emoji"}
             client:load
           />
@@ -328,7 +359,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_instructor.png"}
+            src={instructor}
             alt={"Shark instructor emoji"}
             client:load
           />
@@ -339,7 +370,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_thistbh.png"}
+            src={thistbh}
             alt={"Shark this tbh emoji"}
             client:load
           />
@@ -347,7 +378,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_valentine.png"}
+            src={valentine}
             alt={"Shark valentine emoji"}
             client:load
           />
@@ -355,7 +386,7 @@ import Footer from "./Footer.astro";
             container={" w-32 h-32 flex justify-center items-center"}
             modalImage={"w-96"}
             className={"max-w-32 max-h-32 object-contain "}
-            src={"src/images/emoji/emoji_flex.png"}
+            src={flex}
             alt={"Shark flexing emoji"}
             client:load
           />
