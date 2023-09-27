@@ -2,8 +2,8 @@
 import OtherPages from "../layouts/OtherPages.astro";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
-import lbjpScreen from "@assets/lbjp_screen.png"
-import lbjpMobile from "@assets/lbjp_screen.png"
+import lbjpScreen from "@assets/lbjp_screen.png";
+import lbjpMobile from "@assets/lbjp_mobile.png";
 ---
 
 <OtherPages>
@@ -24,20 +24,34 @@ import lbjpMobile from "@assets/lbjp_screen.png"
     <div
       class="flex flex-col w-screen max-w-5xl md:min-w-[265px] bg-neutral-800"
     >
-      <span class="flex flex-col p-4 py-24 self-center max-w-5xl">
+      <span
+        class="flex flex-col p-4 py-24 self-center justify-center itmes-center max-w-5xl"
+      >
         <h2 class="font-bold self-center text-6xl text-jade-50">Laid-Back</h2>
-        <h2 class="font-bold self-center pb-8 text-6xl text-jade-50">
-          Japanese Podcast
-        </h2>
-        <p class="max-w-lg self-center">
-          A podcast where you can go to listen to relaxed conversations in
-          English about Japanese language and culture packed with valuable,
-          usable information. But free of tedious drills, vocab lists, and
-          grammar sections. The landing site is made with Astro and some React
-          components.
+        <div
+          class="font-bold flex flex-col md:flex-row pb-8 text-6xl text-jade-50 mx-auto justify-center itmes-center"
+        >
+          <h2 class="">Japanese</h2>
+          <h2 class="pl-4">Podcast</h2>
+        </div>
+
+        <p class="max-w-lg self-center pb-4">
+          A podcast where you can listen to laid-back conversations in English
+          about Japanese language and culture. The episodes are packed with
+          valuable, usable information. It's free of tedious drills, vocab
+          lists, and grammar sections. The landing site is made with Astro and
+          some React components.
         </p>
+        <p class="max-w-lg pb-4">
+          I made the site as well as all the art used on it^^
+        </p>
+        <a
+          href="https://laidbackjapanese.com/"
+          class="border-b-2 border-jade-500 w-fit hover:border-jade-300"
+          >Here's a link to the site.</a
+        >
       </span>
-      <div class="flex flex-col gap-2 lg:mx-auto lg:w-4/5">
+      <div class="flex md:px-20 lg:mx-auto lg:w-4/5">
         <Image
           class="hidden md:block"
           src={lbjpScreen}

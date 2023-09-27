@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import sewingFrontView from "src/images/threed/sewing_1.png";
+
+const { id, src, alt } = Astro.props;
+const newId = document.getElementById(id);
+---
+
+<!-- 
+<style lang="css">
+  dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+  }
+</style> -->
+<button onclick={`${newId}.showModal()`}>
+  <Image src={src} decoding="async" loading="lazy" alt={alt} />
+</button>
+<dialog id={id} class="bg-neutral-100 rounded-lg">
+  <form method="dialog" class="flex flex-col my-auto">
+    <slot name="close" />
+  </form>
+</dialog>
+
+<script></script>
+
+<Modal
+  id="dialog-sewingFrontView"
+  src={sewingFrontView}
+  alt="hello"
+  className="max-w-32 col-span-1"
+>
+  <button slot="close" className="w-screen flex">
+    <div class="h-12 text-5xl text-jade-300 hover:text-jade-700"></div>
+    <main class="">
+      <Image
+        src={sewingBackView}
+        decoding="async"
+        loading="lazy"
+        alt="A description of my image."
+        class="self-center flex-none grow-0"
+      />
+    </main>
+    <p class="">alt text</p>
+  </button>
+</Modal>

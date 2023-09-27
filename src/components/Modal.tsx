@@ -5,7 +5,7 @@ type ModalProps = {
   modal: boolean;
   modalImage?: string;
   setModal: (modal: boolean) => void;
-  src: ImageMetadata;
+  src: string;
   alt: string;
 };
 
@@ -23,7 +23,7 @@ const Modal = ({ modal, modalImage, setModal, src, alt }: ModalProps) => {
           {/* <button onClick={() => setModal(false)}>Close</button> */}
           <div className="h-16" />
           <div className={modalImage}>
-            <Image src={src} alt={alt} />
+            <img src={src} alt={alt} />
           </div>
           <div className="mt-4 mx-auto text-jade-800 w-fit text-center font-semibold">
             {alt}

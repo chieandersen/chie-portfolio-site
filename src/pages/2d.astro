@@ -1,8 +1,444 @@
 ---
-import TwoD from "../components/TwoD.astro";
 import ArtPage from "../layouts/ArtPage.astro";
+import Footer from "src/components/Footer.astro";
+import { Image } from "astro:assets";
+
+import bigSharks from "@assets/banners/big-swimming-sharks.jpg";
+import bigNS from "@assets/banners/big-using-ns.jpg";
+import overlayChan from "@assets/people/overlay-chan.jpg";
+import dalyn from "@assets/people/portrait-dalyn.jpg";
+import satoko from "@assets/people/portrait-satoko.jpg";
+import ty from "@assets/people/portrait-ty.jpg";
+import einstein from "@assets/badges/badge-einstein.png";
+import home from "@assets/badges/badge-home.png";
+import commander from "@assets/badges/badge-commander.png";
+import worldTraveler from "@assets/badges/badge-world-traveler.png";
+import monsterHunter from "@assets/badges/badge-monster-hunter.png";
+import japanese from "@assets/badges/badge-japanese.png";
+import chameleon from "@assets/badges/badge-chameleon.png";
+import sumo from "@assets/badges/badge-sumo-wrestler.png";
+import detectiveBadge from "@assets/badges/badge-detective-badge.png";
+import sentenceCleaner from "@assets/badges/badge-sentence-cleaner.png";
+import confidentTraveler from "@assets/badges/badge-confident-traveler.png";
+import survivalPhrases from "@assets/badges/badge-survival-phrases.png";
+import curious from "@assets/emoji/emoji_chie_curious.png";
+import happy from "@assets/emoji/emoji_chie_happy.png";
+import cry from "@assets/emoji/emoji_chie_cry.png";
+import bronze from "@assets/emoji/boarder_bronze.png";
+import silver from "@assets/emoji/boarder_silver.png";
+import kimono from "@assets/emoji/emoji_kimono.png";
+import snowCone from "@assets/emoji/emoji_kakigoori.png";
+import drink from "@assets/emoji/emoji_drink.png";
+import pikachu from "@assets/emoji/emoji_pikachu.png";
+import covereyes from "@assets/emoji/emoji_covereyes.png";
+import sunglasses from "@assets/emoji/emoji_sunglasses.png";
+import cracker from "@assets/emoji/emoji_cracker.png";
+import boba from "@assets/emoji/emoji_boba.png";
+import smile from "@assets/emoji/emoji_smile.png";
+import instructor from "@assets/emoji/emoji_instructor.png";
+import thistbh from "@assets/emoji/emoji_thistbh.png";
+import valentine from "@assets/emoji/emoji_valentine.png";
+import flex from "@assets/emoji/emoji_flex.png";
+import oceanShark from "@assets/banners/big-phase1.jpg";
+import crepes from "@assets/banners/big-crepes.jpg";
+import shinkansen from "@assets/banners/big-shinkansen.jpg";
+import phoneDrop from "@assets/banners/dropped_phone.png";
+import lbjpCover from "@assets/banners/lbjp2_banner_cover_02.jpg";
+import beachLight from "@assets/banners/big-beach-light.png";
+import beachDark from "@assets/banners/big-beach-dark.png";
 ---
 
 <ArtPage>
-  <TwoD />
+  <main class="text-jade-50 w-screen flex flex-col items-center">
+    <!-- Description -->
+    <div class="w-screen max-w-5xl min-w-[265px]">
+      <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+        <h1 class="font-bold text-6xl pb-8 self-center">2D Art</h1>
+        <ul class="list-disc list-inside text-xl max-w-lg self-center">
+          <li>Conceptualize words, feelings, & abstract thoughts</li>
+          <li>Story-driven images</li>
+          <li>Light-hearted, rounded, and fun</li>
+        </ul>
+      </span>
+    </div>
+    <!-- Banners -->
+    <div class="flex flex-col w-screen min-w-[265px] px-4 bg-neutral-800">
+      <span class="flex flex-col p-4 py-24 self-center max-w-5xl">
+        <h2 class="font-bold w-max self-center pb-8 text-6xl text-jade-50">
+          Hero Images
+        </h2>
+        <p class="max-w-lg self-center">
+          Banners, posters, and header images. These vibrant images set the
+          mood. I make sure the world within the illustration reaches beyond its
+          borders.
+        </p>
+      </span>
+      <div class="flex flex-col gap-2 lg:mx-auto lg:w-2/3">
+        <div class="grid pb-2">
+          <div class="col-span-1">
+            <Image
+              class="p-1"
+              src={oceanShark}
+              alt={"ocean floor with colorful coral and a happy shark"}
+            />
+          </div>
+          <div class="col-span-1">
+            <Image class="p-1" src={crepes} alt="under-water crepe shop" />
+          </div>
+          <div class="col-span-1">
+            <Image
+              class="p-1 bg-cover"
+              src={shinkansen}
+              alt="girl staring out the shinkansen window looking at Mt.Fuji"
+            />
+          </div>
+          <div class="snap-center">
+            <Image
+              class="p-1"
+              src={beachLight}
+              alt="page divider illustration of the ocean waves and a crab waving at you on the sandy beach"
+            />
+          </div>
+        </div>
+      </div>
+      <span class="flex gap-4 mb-16 mx-auto lg:w-2/3 self-center">
+        <div class="max-w-lg">
+          <div class="max-w-lg">
+            <Image
+              class="w-full"
+              src={bigSharks}
+              alt={"Logistics of learning a language – focused on accountability and momentum moving forward"}
+            />
+          </div>
+        </div>
+        <div class="max-w-lg">
+          <div class="max-w-lg">
+            <Image
+              class="w-full"
+              src={bigNS}
+              alt={"Sea kelp forest with sunken sailing equipment"}
+            />
+          </div>
+        </div>
+      </span>
+    </div>
+    <!-- People and Characters -->
+    <div class="w-screen max-w-5xl min-w-[265px]">
+      <span class="flex flex-col p-4 py-24 items-center max-w-5xl">
+        <h1 class="font-bold text-6xl">People &</h1>
+        <h1 class="font-bold text-6xl pb-8">Characters</h1>
+        <p class="max-w-lg self-center">
+          Who wants profile pictures as real photos of themselves when you can
+          have sweet, illustrated versions 👀
+        </p>
+      </span>
+      <span
+        class="flex flex-col p-4 md:p-20 items-center max-w-5xl bg-neutral-50"
+      >
+        <div class="grid grid-cols-2 gap-4 pb-3">
+          <div class="max-w-lg">
+            <Image
+              class="col-span-1"
+              src={overlayChan}
+              alt={"Portrait illustation of sea-angel"}
+            />
+          </div>
+          <div class="max-w-lg">
+            <Image
+              class="col-span-1"
+              src={ty}
+              alt={"Portrait illustation of Ty"}
+            />
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <div class="max-w-lg">
+            <Image
+              class="flex-1"
+              src={dalyn}
+              alt={"Portrait illustation of Dalyn"}
+            />
+          </div>
+          <div class="max-w-lg">
+            <Image
+              class="flex-1"
+              src={satoko}
+              alt={"Portrait illustration of Satoko"}
+            />
+          </div>
+        </div>
+      </span>
+    </div>
+    <!-- BADGES -->
+    <span class="pb-12 md:pb-20">
+      <div class="flex flex-col p-4 py-24 items-center max-w-5xl">
+        <h1 class="font-bold text-6xl text-jade-50 w-fit self-center pb-6">
+          Badges
+        </h1>
+        <p class="w-fit max-w-lg self-center">
+          Adding a bit of color to celebrate making progress on learning
+          Japanese at NativShark.
+        </p>
+      </div>
+      <div
+        class="col-span-3 mx-4 md:col-span-2 md:mx-4 max-w-5xl flex flex-col gap-2"
+      >
+        <div class="flex flex-row gap-2">
+          <div class="max-w-lg">
+            <Image class="" src={einstein} alt={"Einstein badge"} />
+          </div>
+          <div class="max-w-lg">
+            <Image class="" src={home} alt={"Home badge"} />
+          </div>
+          <div class="max-w-lg">
+            <Image class="" src={commander} alt={"Commander badge"} />
+          </div>
+          <div class="max-w-lg">
+            <Image class="" src={worldTraveler} alt={"World-traveler badge"} />
+          </div>
+        </div>
+        <div class="flex flex-row gap-2">
+          <div class="max-w-lg">
+            <Image class="" src={monsterHunter} alt={"Monster-hunter badge"} />
+          </div>
+          <div class="max-w-lg">
+            <Image class="" src={chameleon} alt={"Chameleon badge"} />
+          </div>
+          <div class="max-w-lg">
+            <Image class="" src={sumo} alt={"Sumo-wrestler badge"} />
+          </div>
+
+          <div class="max-w-lg">
+            <Image class="" src={detectiveBadge} alt={"detective badge"} />
+          </div>
+        </div>
+        <div class="flex flex-row gap-2">
+          <div class="max-w-lg">
+            <Image
+              class=""
+              src={japanese}
+              alt={"Japaese investigation badge"}
+            />
+          </div>
+          <div class="max-w-lg">
+            <Image
+              class=""
+              src={sentenceCleaner}
+              alt={"Sentence-cleaner badge"}
+            />
+          </div>
+          <div class="max-w-lg">
+            <Image
+              class=""
+              src={confidentTraveler}
+              alt={"Confident-traveler badge"}
+            />
+          </div>
+          <div class="max-w-lg">
+            <Image
+              class=""
+              src={survivalPhrases}
+              alt={"Survival-phrases badge"}
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+    <!-- EMOJI -->
+    <span
+      class="bg-neutral-800 flex flex-col justify-center items-center pb-12 lg:my-24 md:pb-20"
+    >
+      <div class="flex flex-col p-4 py-24 items-center max-w-5xl">
+        <h1 class="font-bold text-6xl text-jade-50 w-fit pb-6">Emoji</h1>
+        <p class="max-w-lg">
+          There's never enough emojis to express all the emotions and occasions
+          with.
+        </p>
+      </div>
+      <div
+        class="max-w-5xl flex flex-col items-center justify-center gap-2 w-fit"
+      >
+        <div
+          class="gap-2 flex flex-wrap max-h-[680px] overflow-hidden justify-center items-center self-center mx-4"
+        >
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={curious}
+                alt={"Curious Chie emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={happy}
+                alt={"Happy Chie emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={cry}
+                alt={"Crying Chie emoji"}
+              />
+            </div>
+          </div>
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={bronze}
+                alt={"Bronze profile picture border"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={silver}
+                alt={"Silver profile picture border"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={kimono}
+                alt={"Kimono emoji"}
+              />
+            </div>
+          </div>
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={snowCone}
+                alt={"Snow-cone emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={drink}
+                alt={"Tropical drink emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="object-contain max-w-[128px] max-h-[128px]"
+                src={pikachu}
+                alt={"Shark picachu emoji"}
+              />
+            </div>
+          </div>
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={covereyes}
+                alt={"Puffer fish see-no-evil emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={sunglasses}
+                alt={"Cool sunglass shark emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={cracker}
+                alt={"Party cracker emoji"}
+              />
+            </div>
+          </div>
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={boba}
+                alt={"Shark sharing boba tea emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={smile}
+                alt={"Shark smile emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={instructor}
+                alt={"Shark instructor emoji"}
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2">
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={thistbh}
+                alt={"Shark this tbh emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={valentine}
+                alt={"Shark valentine emoji"}
+              />
+            </div>
+            <div
+              class="max-w-[128px] max-h-[128px] flex justify-center items-center"
+            >
+              <Image
+                class="max-w-[128px] max-h-[128px]"
+                src={flex}
+                alt={"Shark flexing emoji"}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+    <Footer />
+  </main>
 </ArtPage>
